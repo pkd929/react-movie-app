@@ -17,12 +17,9 @@ const SearchBarCardComponents = ({searchValue, setSearchValue, typeValue, setTyp
         <>
             <div className='searchBox'>
                 <div className="container">
-                    <h6>Type movie or tv show name to find it</h6>
+                    <h6>Type movie name to find it</h6>
                     <div className='checkBoxSec'>
-                        <label htmlFor="tvFind">
-                            <input type="radio" value="tv" onChange={chagneValueHandler} checked={typeValue === 'tv' ? true : false} name="findSeriesType" id="tvFind" />
-                            <span>Tv </span>
-                        </label>
+                      
                         <label htmlFor="seriesFind">
                             <input type="radio" value="movie" onChange={chagneValueHandler} checked={typeValue === 'movie' ? true : false} name="findSeriesType" id="seriesFind" />
                             <span>Movies </span>

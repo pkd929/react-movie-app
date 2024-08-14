@@ -20,7 +20,6 @@ const LeftListBarComponent = (
 
     const GetDataList = async ()=>{
         const {data:{genres}} = await axios.get(`https://api.themoviedb.org/3/genre/${type}/list?api_key=${API_KEY}&language=en-US`);
-        //console.log('genres', genres);
         setGenres(genres)
     }
     useEffect(()=>{
@@ -29,12 +28,10 @@ const LeftListBarComponent = (
         return ()=>{
             setGenres({});
         }
-        //eslint-disable-next-line
     }, [])
 
     const handleAdd = (genre)=>{
         setSelectedGenres([...selectedGenres, genre])
-        //console.log('oldSelectedGenres', selectedGenres)
         setGenres(genres.filter((g)=>{ return g.id !== genre.id}));
         return setPage(1)
     }
@@ -44,7 +41,6 @@ const LeftListBarComponent = (
                 return g.id !== genre.id
             })
         )
-        //console.log('oldSelectedGenres', selectedGenres)
         setGenres([...genres,genre]);
         return setPage(1)
     }

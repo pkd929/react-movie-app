@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {img_300, img_not_available} from '../../Config';
 const CardMoviesComponents = ({data,mediaType})=>{
-    //console.log(data)
 
     const title = data.original_title || data.name;
     const id = data.id;

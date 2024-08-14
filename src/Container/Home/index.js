@@ -10,7 +10,7 @@ const  HomeContainer = ()=>{
     const [content, setContent] = useState([]);
     const [pageno, setPageno] = useState(1)
     const [paginationno, setPaginationno] = useState(0)
-    const API_KEY = process.env.REACT_APP_NOT_SECRET_CODE;
+    const API_KEY = "91b9231a7dbc68a93e401d8ec29850b2";
 
 
     

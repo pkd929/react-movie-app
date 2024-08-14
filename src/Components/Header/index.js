@@ -8,17 +8,13 @@ const HeaderComponent = ()=>{
     const navData = [
         {name:'Home', link:'/'},
         {name:'Movies', link:'/movies'},
-        {name:'Tv Series', link:'/series'},
         {name:'Search', link:'/search'},
-        {name:'Contact Us', link:'/contact'},
-        {name: 'About Us', link: '/about'}
     ]
-
     return (
         <header  className='header'>
             <Navbar bg="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand>My Entertainment</Navbar.Brand>
+                    <Navbar.Brand>React Assignment</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                     <Nav
